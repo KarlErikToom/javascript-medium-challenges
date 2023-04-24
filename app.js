@@ -1,19 +1,18 @@
-/*function removeApples(arr){
-    let noApples = []
-for (i = 0; i < arr.length; i++){
-    if (arr[i] !== 'Apples') {
-        noApples.push(arr[i])
+function filterOutFalsy(arr) {
+  let truthyArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!!arr[i] === true) {
+      truthyArr.push(arr[i]);
     }
-}
-return noApples
-}
-
-
-console.log(removeApples(['Banana', 'Apples', 'Oranges']))
-*/
-function removeApples(arr){
-    return arr.filter(elem => elem !=='Apples')
+  }
+  return truthyArr;
 }
 
+console.log(filterOutFalsy(["", true, 'hello', null, undefined, "0"]));
 
-console.log(removeApples(['Banana', 'Apples', 'Oranges']))
+/*function filterOutFalsy(arr){
+return arr.filter(elem => !!elem === true)
+}
+
+
+console.log(filterOutFalsy(["", true, 'hello', null, undefined, "0"]))*/

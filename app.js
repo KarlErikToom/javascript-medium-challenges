@@ -1,4 +1,5 @@
-function falsyOrTruthy(elem1, elem2) {
-  return !elem1 ? elem1 : elem2;
+function arrLength(array) {
+    return array.length
 }
-console.log(falsyOrTruthy(false, 5));
+
+console.log(arrLength([1,2,3,2]))

@@ -1,11 +1,5 @@
-function getMax(arr) {
-  let max = arr[0];
-  for (let i = 0; i < arr.length; ++i) {
-    if (arr[i] > max) {
-      max = arr[i];
-    }
-  }
-  return max
+function reverseString(str) {
+  return str.split("").reverse().join("");
 }
 
-console.log(getMax([-100, -200, -300]));
+console.log(reverseString("cool"));

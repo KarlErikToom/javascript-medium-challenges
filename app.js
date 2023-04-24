@@ -1,22 +1,19 @@
-/*function convertToZeros(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = 0;
-  }
-  return arr;
+/*function removeApples(arr){
+    let noApples = []
+for (i = 0; i < arr.length; i++){
+    if (arr[i] !== 'Apples') {
+        noApples.push(arr[i])
+    }
+}
+return noApples
 }
 
-console.log(convertToZeros([5, 100, 0, 2, 4, 5]));
+
+console.log(removeApples(['Banana', 'Apples', 'Oranges']))
 */
-
-/*function convertToZeros(arr) {
-    return new Array(arr.length).fill(0)
-  }
-  
-  console.log(convertToZeros([5, 100, 0, 2, 4, 5]));
-  */
-
-function convertToZeros(arr) {
-  return arr.map((arr) => 0);
+function removeApples(arr){
+    return arr.filter(elem => elem !=='Apples')
 }
 
-console.log(convertToZeros([5, 100, 0]));
+
+console.log(removeApples(['Banana', 'Apples', 'Oranges']))

@@ -1,3 +1,4 @@
+/*
 function filterOutFalsy(arr) {
   let truthyArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -10,9 +11,17 @@ function filterOutFalsy(arr) {
 
 console.log(filterOutFalsy(["", true, 'hello', null, undefined, "0"]));
 
-/*function filterOutFalsy(arr){
+function filterOutFalsy(arr){
 return arr.filter(elem => !!elem === true)
 }
 
 
 console.log(filterOutFalsy(["", true, 'hello', null, undefined, "0"]))*/
+
+
+function convertToBoolean(arr){
+   return arr.map(elem => !!elem)
+
+}
+
+console.log(convertToBoolean([500, 0, "karl", "",[] ]))

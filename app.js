@@ -1,5 +1,8 @@
-function lastElem(arr) {
-  return arr[arr.length -1]
+function progressiveSum(num) {
+  let sum = 0;
+  for (let i = 1; i <= num; ++i){
+    sum = sum +i
+  }
+  return sum
 }
-
-console.log(lastElem([1, 2, 3, 2]));
+console.log(progressiveSum([3]));

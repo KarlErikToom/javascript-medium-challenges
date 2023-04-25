@@ -1,9 +1,13 @@
-function progressiveSum(num) {
-  sum = 0;
-  for (i = 1; i <= num; i++) {
-    sum = sum + i;
-  }
-  return sum;
+function calcTime(seconds) {
+  let timerMinutes = Math.floor(seconds / 60);
+  let timerSeconds = seconds % 60;
+   if (timerMinutes.toString().length === 1){
+      timerMinutes = '0' + timerMinutes
+   }
+   if (timerSeconds.toString().length === 1){
+      timerSeconds = '0' + timerSeconds
+   }
+  return timerMinutes + ':' + timerSeconds
 }
 
-console.log(progressiveSum(2));
+console.log(calcTime(146));

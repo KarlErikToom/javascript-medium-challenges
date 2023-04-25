@@ -1,5 +1,4 @@
-function arrLength(arr){
- return arr.length
+function lastElem(arr) {
+ return arr[arr.length -1]
 }
-
-console.log(arrLength([1,2,3,5]))
+console.log(lastElem([3, 2, 0, 6, 24]));

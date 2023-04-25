@@ -1,17 +1,18 @@
-/*function convertToZeros(arr) {
-  for (let i = 0; i < arr.length; i++){
-   arr[i] = 0
+function removeApples(arr) {
+   let noApples = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== "Apples") {
+      noApples.push(arr[i])
+    }
   }
-  return arr
+  return noApples
 }
 
-console.log(convertToZeros([5, 100, 0, 4, "fog"]));
-*/
+console.log(removeApples(["Banana", "cucumba", "Apples"]));
 
-function convertToZeros(arr){
- let newArr = arr.map(elem => 0)
- return newArr
+/*
+function removeApples(arr){
+ return arr.filter(elem => elem  !=='Apples')
 }
 
-
-console.log(convertToZeros([1,2,3,4]))
+console.log(removeApples(['banana', 'Apples', 'Oranges']))*/

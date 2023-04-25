@@ -1,8 +1,12 @@
-function convertToZeros(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = 0;
+function removeApples(arr) {
+  let noApples = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] !== "Apples") {
+      noApples.push(arr[i])
+    }
   }
-  return arr
+  return noApples
+  
 }
 
-console.log(convertToZeros([5, 100, 0]));
+console.log(removeApples(["Banana", "Oranges", "Apples"]));

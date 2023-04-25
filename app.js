@@ -1,17 +1,8 @@
-/*function reverseString(str) {
-  let reversedString = "";
-  for (i = 0; i < str.length; i++) {
-    reversedString = str[i] + reversedString;
+function convertToZeros(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = 0;
   }
-  return reversedString;
+  return arr
 }
 
-console.log(reverseString("Karl"));
-*/
-
-function reverseString(str){
- return str.split('').reverse().join('')
-}
-
-
-console.log(reverseString('Karl'))
+console.log(convertToZeros([5, 100, 0]));

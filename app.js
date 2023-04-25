@@ -1,27 +1,16 @@
-/*
-function filterOutFalsy(arr) {
-  let truthyArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (!!arr[i] === true) {
-      truthyArr.push(arr[i]);
-    }
-  }
-  return truthyArr;
+/*function filterOutFalsy(num1, num2){
+if (num1 == false){
+   return num1
+}
+else {
+   return num2
+}
 }
 
-console.log(filterOutFalsy(["", true, 'hello', null, undefined, "0"]));
+console.log(filterOutFalsy("", 10 ))
+*/
 
-function filterOutFalsy(arr){
-return arr.filter(elem => !!elem === true)
-}
-
-
-console.log(filterOutFalsy(["", true, 'hello', null, undefined, "0"]))*/
-
-
-function convertToBoolean(arr){
-   return arr.map(elem => !!elem)
-
-}
-
-console.log(convertToBoolean([500, 0, "karl", "",[] ]))
+function filterOutFalsy(num1, num2){
+   return num1 == false ?  num1 : num2
+   }
+   console.log(filterOutFalsy(0, 5))

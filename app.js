@@ -1,15 +1,17 @@
-/*function reverseString(str){
-  return str.split('').reverse().join('')
-}
-
-console.log(reverseString('abc'))
-*/
-function reverseString(str) {
-  let reversedString = "";
-  for (let i = 0; i < str.length; i++) {
-    reversedString = str[i] + reversedString;
+/*function convertToZeros(arr) {
+  for (let i = 0; i < arr.length; i++){
+   arr[i] = 0
   }
-  return reversedString;
+  return arr
 }
 
-console.log(reverseString("abc"));
+console.log(convertToZeros([5, 100, 0, 4, "fog"]));
+*/
+
+function convertToZeros(arr){
+ let newArr = arr.map(elem => 0)
+ return newArr
+}
+
+
+console.log(convertToZeros([1,2,3,4]))

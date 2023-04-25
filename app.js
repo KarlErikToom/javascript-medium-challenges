@@ -1,11 +1,17 @@
-function getMax(arr) {
-  let max = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-    }
+/*function reverseString(str) {
+  let reversedString = "";
+  for (i = 0; i < str.length; i++) {
+    reversedString = str[i] + reversedString;
   }
-  return max;
+  return reversedString;
 }
 
-console.log(getMax([5, 100, 0, 200, 20, 421]));
+console.log(reverseString("Karl"));
+*/
+
+function reverseString(str){
+ return str.split('').reverse().join('')
+}
+
+
+console.log(reverseString('Karl'))

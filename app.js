@@ -1,13 +1,11 @@
-function calcTime(seconds) {
-  let timerMinutes = Math.floor(seconds / 60);
-  let timerSeconds = seconds % 60;
-   if (timerMinutes.toString().length === 1){
-      timerMinutes = '0' + timerMinutes
-   }
-   if (timerSeconds.toString().length === 1){
-      timerSeconds = '0' + timerSeconds
-   }
-  return timerMinutes + ':' + timerSeconds
+function getMax(arr) {
+   let max = arr[0]
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i]
+    }
+  }
+  return max
 }
 
-console.log(calcTime(146));
+console.log(getMax([5, 2, 50,2 ,52, 12]));
